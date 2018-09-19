@@ -1,0 +1,484 @@
+2018-09-15 15:35:31 [scrapy.core.engine] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "d:\xuni\lib\site-packages\scrapy\core\engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\spider.py", line 27, in start_requests
+    self.config_init()
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\spider.py", line 18, in config_init
+    self.read_configuration_file(self.crawler.settings["config_name"])
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\spider.py", line 23, in read_configuration_file
+    args = yaml.load(f)
+  File "d:\xuni\lib\site-packages\yaml\__init__.py", line 72, in load
+    return loader.get_single_data()
+  File "d:\xuni\lib\site-packages\yaml\constructor.py", line 35, in get_single_data
+    node = self.get_single_node()
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "d:\xuni\lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "d:\xuni\lib\site-packages\yaml\parser.py", line 551, in parse_flow_mapping_key
+    if self.check_token(KeyToken):
+  File "d:\xuni\lib\site-packages\yaml\scanner.py", line 116, in check_token
+    self.fetch_more_tokens()
+  File "d:\xuni\lib\site-packages\yaml\scanner.py", line 257, in fetch_more_tokens
+    self.get_mark())
+yaml.scanner.ScannerError: while scanning for the next token
+found character '\t' that cannot start any token
+  in "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\configFiles\宁夏自治区.yaml", line 5, column 1
+2018-09-15 15:38:26 [scrapy.core.engine] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "d:\xuni\lib\site-packages\scrapy\core\engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\spider.py", line 27, in start_requests
+    self.config_init()
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\spider.py", line 18, in config_init
+    self.read_configuration_file(self.crawler.settings["config_name"])
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\spider.py", line 23, in read_configuration_file
+    args = yaml.load(f)
+  File "d:\xuni\lib\site-packages\yaml\__init__.py", line 72, in load
+    return loader.get_single_data()
+  File "d:\xuni\lib\site-packages\yaml\constructor.py", line 35, in get_single_data
+    node = self.get_single_node()
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "d:\xuni\lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "d:\xuni\lib\site-packages\yaml\parser.py", line 551, in parse_flow_mapping_key
+    if self.check_token(KeyToken):
+  File "d:\xuni\lib\site-packages\yaml\scanner.py", line 116, in check_token
+    self.fetch_more_tokens()
+  File "d:\xuni\lib\site-packages\yaml\scanner.py", line 257, in fetch_more_tokens
+    self.get_mark())
+yaml.scanner.ScannerError: while scanning for the next token
+found character '\t' that cannot start any token
+  in "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\configFiles\宁夏自治区.yaml", line 5, column 1
+2018-09-15 15:38:58 [scrapy.core.engine] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "d:\xuni\lib\site-packages\scrapy\core\engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\spider.py", line 27, in start_requests
+    self.config_init()
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\spider.py", line 18, in config_init
+    self.read_configuration_file(self.crawler.settings["config_name"])
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\spider.py", line 23, in read_configuration_file
+    args = yaml.load(f)
+  File "d:\xuni\lib\site-packages\yaml\__init__.py", line 72, in load
+    return loader.get_single_data()
+  File "d:\xuni\lib\site-packages\yaml\constructor.py", line 35, in get_single_data
+    node = self.get_single_node()
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "d:\xuni\lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "d:\xuni\lib\site-packages\yaml\parser.py", line 551, in parse_flow_mapping_key
+    if self.check_token(KeyToken):
+  File "d:\xuni\lib\site-packages\yaml\scanner.py", line 116, in check_token
+    self.fetch_more_tokens()
+  File "d:\xuni\lib\site-packages\yaml\scanner.py", line 257, in fetch_more_tokens
+    self.get_mark())
+yaml.scanner.ScannerError: while scanning for the next token
+found character '\t' that cannot start any token
+  in "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\configFiles\宁夏自治区.yaml", line 5, column 1
+2018-09-15 15:39:40 [scrapy.core.engine] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "d:\xuni\lib\site-packages\scrapy\core\engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\spider.py", line 28, in start_requests
+    for url in self.start_url:
+AttributeError: 'spider_ningxia' object has no attribute 'start_url'
+2018-09-15 15:40:43 [scrapy.core.engine] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "d:\xuni\lib\site-packages\scrapy\core\engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\spider.py", line 27, in start_requests
+    self.config_init()
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\spider.py", line 18, in config_init
+    self.read_configuration_file(self.crawler.settings["config_name"])
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\spider.py", line 23, in read_configuration_file
+    args = yaml.load(f)
+  File "d:\xuni\lib\site-packages\yaml\__init__.py", line 72, in load
+    return loader.get_single_data()
+  File "d:\xuni\lib\site-packages\yaml\constructor.py", line 35, in get_single_data
+    node = self.get_single_node()
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "d:\xuni\lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "d:\xuni\lib\site-packages\yaml\parser.py", line 551, in parse_flow_mapping_key
+    if self.check_token(KeyToken):
+  File "d:\xuni\lib\site-packages\yaml\scanner.py", line 116, in check_token
+    self.fetch_more_tokens()
+  File "d:\xuni\lib\site-packages\yaml\scanner.py", line 257, in fetch_more_tokens
+    self.get_mark())
+yaml.scanner.ScannerError: while scanning for the next token
+found character '\t' that cannot start any token
+  in "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\configFiles\宁夏自治区.yaml", line 4, column 1
+2018-09-15 15:43:00 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.nxtj.gov.cn/tjsj/ndsj/2015/indexce.htm>
+Traceback (most recent call last):
+  File "d:\xuni\lib\site-packages\twisted\internet\defer.py", line 1384, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "d:\xuni\lib\site-packages\twisted\python\failure.py", line 422, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "d:\xuni\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "d:\xuni\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "d:\xuni\lib\site-packages\twisted\internet\endpoints.py", line 975, in startConnectionAttempts
+    "no results for hostname lookup: {}".format(self._hostStr)
+twisted.internet.error.DNSLookupError: DNS lookup failed: no results for hostname lookup: www.nxtj.gov.cn.
+2018-09-15 15:43:00 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.nxtj.gov.cn/tjsj/ndsj/2017/indexfiles/indexch.htm>
+Traceback (most recent call last):
+  File "d:\xuni\lib\site-packages\twisted\internet\defer.py", line 1384, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "d:\xuni\lib\site-packages\twisted\python\failure.py", line 422, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "d:\xuni\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "d:\xuni\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "d:\xuni\lib\site-packages\twisted\internet\endpoints.py", line 975, in startConnectionAttempts
+    "no results for hostname lookup: {}".format(self._hostStr)
+twisted.internet.error.DNSLookupError: DNS lookup failed: no results for hostname lookup: www.nxtj.gov.cn.
+2018-09-15 15:43:00 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.nxtj.gov.cn/tjsj/ndsj/2016/indexfiles/indexch.htm>
+Traceback (most recent call last):
+  File "d:\xuni\lib\site-packages\twisted\internet\defer.py", line 1384, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "d:\xuni\lib\site-packages\twisted\python\failure.py", line 422, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "d:\xuni\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "d:\xuni\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "d:\xuni\lib\site-packages\twisted\internet\endpoints.py", line 975, in startConnectionAttempts
+    "no results for hostname lookup: {}".format(self._hostStr)
+twisted.internet.error.DNSLookupError: DNS lookup failed: no results for hostname lookup: www.nxtj.gov.cn.
+2018-09-15 15:43:00 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.nxtj.gov.cn/tjsj/ndsj/2014/indexch.htm>
+Traceback (most recent call last):
+  File "d:\xuni\lib\site-packages\twisted\internet\defer.py", line 1384, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "d:\xuni\lib\site-packages\twisted\python\failure.py", line 422, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "d:\xuni\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "d:\xuni\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "d:\xuni\lib\site-packages\twisted\internet\endpoints.py", line 975, in startConnectionAttempts
+    "no results for hostname lookup: {}".format(self._hostStr)
+twisted.internet.error.DNSLookupError: DNS lookup failed: no results for hostname lookup: www.nxtj.gov.cn.
+2018-09-15 15:43:55 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.nxtj.gov.cn/tjsj/ndsj/2015/indexce.htm> (referer: None)
+Traceback (most recent call last):
+  File "d:\xuni\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\xuni\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "d:\xuni\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\xuni\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\xuni\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\spider.py", line 46, in parse
+    driver.switch_to.frame('contents')
+  File "d:\xuni\lib\site-packages\selenium\webdriver\remote\switch_to.py", line 89, in frame
+    self._driver.execute(Command.SWITCH_TO_FRAME, {'id': frame_reference})
+  File "d:\xuni\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "d:\xuni\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64)
+
+2018-09-15 15:44:03 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.nxtj.gov.cn/tjsj/ndsj/2017/indexfiles/indexch.htm> (referer: None)
+Traceback (most recent call last):
+  File "d:\xuni\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\xuni\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "d:\xuni\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\xuni\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\xuni\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\spider.py", line 45, in parse
+    driver.get(response.url)
+  File "d:\xuni\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 324, in get
+    self.execute(Command.GET, {'url': url})
+  File "d:\xuni\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "d:\xuni\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: cannot determine loading status
+from unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64)
+
+2018-09-15 15:56:23 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.nxtj.gov.cn/tjsj/ndsj/2015/indexce.htm> (referer: None)
+Traceback (most recent call last):
+  File "d:\xuni\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\xuni\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "d:\xuni\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\xuni\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\xuni\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\spider.py", line 45, in parse
+    if self.if_frame==True:
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\public.py", line 31, in selunim_run
+    driver.switch_to.frame(frame_name)
+  File "d:\xuni\lib\site-packages\selenium\webdriver\remote\switch_to.py", line 89, in frame
+    self._driver.execute(Command.SWITCH_TO_FRAME, {'id': frame_reference})
+  File "d:\xuni\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "d:\xuni\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64)
+
+2018-09-15 15:56:29 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.nxtj.gov.cn/tjsj/ndsj/2016/indexfiles/indexch.htm> (referer: None)
+Traceback (most recent call last):
+  File "d:\xuni\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\xuni\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "d:\xuni\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\xuni\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\xuni\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\spider.py", line 45, in parse
+    if self.if_frame==True:
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\public.py", line 30, in selunim_run
+    driver.get(url)
+  File "d:\xuni\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 324, in get
+    self.execute(Command.GET, {'url': url})
+  File "d:\xuni\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "d:\xuni\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: cannot determine loading status
+from unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64)
+
+2018-09-15 16:23:45 [scrapy.core.engine] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "d:\xuni\lib\site-packages\scrapy\core\engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\spider.py", line 27, in start_requests
+    self.config_init()
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\spider.py", line 18, in config_init
+    self.read_configuration_file(self.crawler.settings["config_name"])
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\spider.py", line 23, in read_configuration_file
+    args = yaml.load(f)
+  File "d:\xuni\lib\site-packages\yaml\__init__.py", line 72, in load
+    return loader.get_single_data()
+  File "d:\xuni\lib\site-packages\yaml\constructor.py", line 35, in get_single_data
+    node = self.get_single_node()
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "d:\xuni\lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "d:\xuni\lib\site-packages\yaml\parser.py", line 439, in parse_block_mapping_key
+    "expected <block end>, but found %r" % token.id, token.start_mark)
+yaml.parser.ParserError: while parsing a block mapping
+  in "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\configFiles\广西自治区.yaml", line 1, column 1
+expected <block end>, but found '<scalar>'
+  in "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\configFiles\广西自治区.yaml", line 9, column 17
+2018-09-15 16:23:58 [scrapy.core.engine] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "d:\xuni\lib\site-packages\scrapy\core\engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\spider.py", line 27, in start_requests
+    self.config_init()
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\spider.py", line 18, in config_init
+    self.read_configuration_file(self.crawler.settings["config_name"])
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\spider.py", line 23, in read_configuration_file
+    args = yaml.load(f)
+  File "d:\xuni\lib\site-packages\yaml\__init__.py", line 72, in load
+    return loader.get_single_data()
+  File "d:\xuni\lib\site-packages\yaml\constructor.py", line 35, in get_single_data
+    node = self.get_single_node()
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "d:\xuni\lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "d:\xuni\lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "d:\xuni\lib\site-packages\yaml\parser.py", line 439, in parse_block_mapping_key
+    "expected <block end>, but found %r" % token.id, token.start_mark)
+yaml.parser.ParserError: while parsing a block mapping
+  in "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\configFiles\广西自治区.yaml", line 1, column 1
+expected <block end>, but found '<scalar>'
+  in "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\configFiles\广西自治区.yaml", line 9, column 17
+2018-09-15 16:25:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.gxtj.gov.cn/tjsj/tjnj/2017/zk/indexch.htm> (referer: None)
+Traceback (most recent call last):
+  File "d:\xuni\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\xuni\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "d:\xuni\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\xuni\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\xuni\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\spider.py", line 53, in parse
+    pattern = '{}-[0-9]{0,2}?'.format(i + 1)
+KeyError: '0,2'
+2018-09-15 16:35:42 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.gxtj.gov.cn/tjsj/tjnj/2017/zk/indexch.htm> (referer: None)
+Traceback (most recent call last):
+  File "d:\xuni\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\xuni\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "d:\xuni\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\xuni\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\xuni\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\spider.py", line 55, in parse
+    k = soup.find_all('a', {'href': re.compile(pattern).groupindex(1)})
+TypeError: 'mappingproxy' object is not callable
+2018-09-15 16:40:24 [scrapy.core.scraper] ERROR: Error processing {'city_name': '广西自治区',
+ 'file_name': '18-9 主要年份邮电通信水平',
+ 'type_name': '第十八篇\u3000交通、运输和邮电通信业',
+ 'url': 'http://www.nxtj.gov.cn/tjsj/ndsj/2017/html/18-09.jpg',
+ 'year': '2017'}
+Traceback (most recent call last):
+  File "d:\xuni\lib\site-packages\urllib3\connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "d:\xuni\lib\site-packages\urllib3\util\connection.py", line 83, in create_connection
+    raise err
+  File "d:\xuni\lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\xuni\lib\site-packages\urllib3\connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "d:\xuni\lib\site-packages\urllib3\connectionpool.py", line 357, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1026, in _send_output
+    self.send(msg)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 964, in send
+    self.connect()
+  File "d:\xuni\lib\site-packages\urllib3\connection.py", line 166, in connect
+    conn = self._new_conn()
+  File "d:\xuni\lib\site-packages\urllib3\connection.py", line 150, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001EE52AA19B0>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\xuni\lib\site-packages\requests\adapters.py", line 440, in send
+    timeout=timeout
+  File "d:\xuni\lib\site-packages\urllib3\connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "d:\xuni\lib\site-packages\urllib3\util\retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='www.nxtj.gov.cn', port=80): Max retries exceeded with url: /tjsj/ndsj/2017/html/18-09.jpg (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EE52AA19B0>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\xuni\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\pipelines.py", line 16, in process_item
+    f.write(requests.get(item['url']).content)
+  File "d:\xuni\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "d:\xuni\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "d:\xuni\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "d:\xuni\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "d:\xuni\lib\site-packages\requests\adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='www.nxtj.gov.cn', port=80): Max retries exceeded with url: /tjsj/ndsj/2017/html/18-09.jpg (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EE52AA19B0>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。',))
+2018-09-15 16:51:35 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.gxtj.gov.cn/tjsj/tjnj/2017/zk/indexch.htm> (referer: None)
+Traceback (most recent call last):
+  File "d:\xuni\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\xuni\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "d:\xuni\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\xuni\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\xuni\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\DELL\Desktop\民族scrapy\minzu\minzu\spiders\spider.py", line 61, in parse
+    downld_url = re(r'(.*)/',response.url).group(0) + k[l].get('href')
+TypeError: 'module' object is not callable

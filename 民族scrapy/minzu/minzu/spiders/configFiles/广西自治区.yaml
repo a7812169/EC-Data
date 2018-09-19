@@ -1,0 +1,20 @@
+city_name : 广西自治区
+# 网站的名称，
+start_url : {'http://www.gxtj.gov.cn/tjsj/tjnj/2017/zk/indexch.htm':'广西年鉴2017'}
+# 比如有不同年份的年鉴,有不同的网址
+if_frame : True
+#网站需要用框架
+frame_name: contents
+#框架的名字
+type_pattern: html/([0]?{}-[0-9].?)
+
+debug_mode : urls
+# 获取每个栏目首页的url列表并打印
+#debug_mode : page
+# 获取每个栏目的列表页翻页情况并打印
+#debug_mode : text
+# 在每个栏目首页的url列表中随机找一条记录获取详情页信息，出现疑难杂症报错，则应修改对应的xpath
+#debug_mode : run
+# 完成后的正常运行模式
+
+# 如果需要拓展的功能，可以参见mother.yaml，此文件中的赋值将覆盖mother.yaml的默认值

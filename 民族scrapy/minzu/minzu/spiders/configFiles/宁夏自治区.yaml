@@ -1,0 +1,23 @@
+city_name : 宁夏自治区
+# 网站的名称，请保持和任务分配中的名称相同，不带(新闻)，测试时，可加上test作为前缀
+start_url : {
+'http://www.nxtj.gov.cn/tjsj/ndsj/2017/indexfiles/indexch.htm': "17年宁夏统计年鉴",
+'http://www.nxtj.gov.cn/tjsj/ndsj/2016/indexfiles/indexch.htm': "16年宁夏统计年鉴",
+'http://www.nxtj.gov.cn/tjsj/ndsj/2015/indexce.htm': "15年宁夏统计年鉴",
+'http://www.nxtj.gov.cn/tjsj/ndsj/2014/indexch.htm': "14年宁夏统计年鉴"}
+# 比如有不同年份的年鉴,有不同的网址
+if_frame : True
+#网站是否需要用框架，填True of Flase
+frame_name: contents
+#框架的名字
+type_pattern: .*/{}-.*?表.htm
+debug_mode : urls
+# 获取每个栏目首页的url列表并打印
+#debug_mode : page
+# 获取每个栏目的列表页翻页情况并打印
+#debug_mode : text
+# 在每个栏目首页的url列表中随机找一条记录获取详情页信息，出现疑难杂症报错，则应修改对应的xpath
+#debug_mode : run
+# 完成后的正常运行模式
+
+# 如果需要拓展的功能，可以参见mother.yaml，此文件中的赋值将覆盖mother.yaml的默认值
