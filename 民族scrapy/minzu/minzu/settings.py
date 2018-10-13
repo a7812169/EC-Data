@@ -57,7 +57,7 @@ DEFAULT_REQUEST_HEADERS = {
 #DOWNLOADER_MIDDLEWARES = {
 #    'minzu.middlewares.MinzuDownloaderMiddleware': 543,
 #}
-
+COOKIES_ENABLED=False
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html
 #EXTENSIONS = {

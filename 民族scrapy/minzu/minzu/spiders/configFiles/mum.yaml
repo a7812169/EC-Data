@@ -1,10 +1,12 @@
 city_name : default
 # 网站的名称，请保持和任务分配中的名称相同，不带(新闻)，测试时，可加上test作为前缀
 start_url : {}
+content_type:
 # 比如有不同年份的年鉴,有不同的网址
 if_frame :
 #网站需要用框架
 frame_name:
+common_download:
 #框架的名字
 type_pattern:
 debug_mode : urls

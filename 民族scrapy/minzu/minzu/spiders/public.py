@@ -23,11 +23,11 @@ def mkdir(path):
 		return True
 	else:
 		# 如果目录存在则不创建，并提示目录已存在
-		print(path + ' 目录已存在')
+
 		return False
-def selunim_run(url,frame_name):
-	driver = webdriver.Chrome()
-	driver.get(url)
-	driver.switch_to.frame(frame_name)
-	page_source = driver.page_source
-	return page_source
+# def selunim_run(url,frame_name):
+# 	driver = webdriver.Chrome()
+# 	driver.get(url)
+# 	driver.switch_to.frame(frame_name)
+# 	page_source = driver.page_source
+# 	return page_source

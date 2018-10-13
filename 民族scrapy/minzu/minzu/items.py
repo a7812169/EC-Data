@@ -13,3 +13,4 @@ class Minzu_ningxia_Item(scrapy.Item):
     file_name=scrapy.Field()
     url=scrapy.Field()
     city_name=scrapy.Field()
+    content_type=scrapy.Field()

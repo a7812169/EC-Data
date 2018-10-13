@@ -6,10 +6,7 @@ start_url : {
 				'http://www.nxtj.gov.cn/tjsj/ndsj/2015/indexce.htm': "15年宁夏统计年鉴",
 				'http://www.nxtj.gov.cn/tjsj/ndsj/2014/indexch.htm': "14年宁夏统计年鉴",}
 # 比如有不同年份的年鉴,有不同的网址
-if_frame :
-#网站是否需要用框架，填True of Flase
-frame_name: contents
-#框架的名字
+
 
 debug_mode : urls
 # 获取每个栏目首页的url列表并打印

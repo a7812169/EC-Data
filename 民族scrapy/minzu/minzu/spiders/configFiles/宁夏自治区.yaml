@@ -2,14 +2,17 @@ city_name : 宁夏自治区
 # 网站的名称，请保持和任务分配中的名称相同，不带(新闻)，测试时，可加上test作为前缀
 start_url : {
 'http://www.nxtj.gov.cn/tjsj/ndsj/2017/indexfiles/indexch.htm': "17年宁夏统计年鉴",
-'http://www.nxtj.gov.cn/tjsj/ndsj/2016/indexfiles/indexch.htm': "16年宁夏统计年鉴",
-'http://www.nxtj.gov.cn/tjsj/ndsj/2015/indexce.htm': "15年宁夏统计年鉴",
-'http://www.nxtj.gov.cn/tjsj/ndsj/2014/indexch.htm': "14年宁夏统计年鉴"}
+#'http://www.nxtj.gov.cn/tjsj/ndsj/2016/indexfiles/indexch.htm': "16年宁夏统计年鉴",
+#'http://www.nxtj.gov.cn/tjsj/ndsj/2015/indexce.htm': "15年宁夏统计年鉴",
+#'http://www.nxtj.gov.cn/tjsj/ndsj/2014/indexch.htm': "14年宁夏统计年鉴"
+}
 # 比如有不同年份的年鉴,有不同的网址
 if_frame : True
 #网站是否需要用框架，填True of Flase
 frame_name: contents
 #框架的名字
+common_download: http://www.nxtj.gov.cn/tjsj/ndsj/2017
+content_type: htm
 type_pattern: .*/{}-.*?表.htm
 debug_mode : urls
 # 获取每个栏目首页的url列表并打印
