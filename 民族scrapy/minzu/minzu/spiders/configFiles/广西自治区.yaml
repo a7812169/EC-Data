@@ -9,13 +9,4 @@ frame_name: contents
 #框架的名字
 type_pattern: html/([0]?{}-[0-9].?)
 common_download: http://www.gxtj.gov.cn/tjsj/tjnj/2017/zk/
-debug_mode : urls
-# 获取每个栏目首页的url列表并打印
-#debug_mode : page
-# 获取每个栏目的列表页翻页情况并打印
-#debug_mode : text
-# 在每个栏目首页的url列表中随机找一条记录获取详情页信息，出现疑难杂症报错，则应修改对应的xpath
-#debug_mode : run
-# 完成后的正常运行模式
 
-# 如果需要拓展的功能，可以参见mother.yaml，此文件中的赋值将覆盖mother.yaml的默认值
