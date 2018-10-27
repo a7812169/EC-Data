@@ -26,11 +26,11 @@ def downld(path,url,content_type):
 
 class MinzuPipeline(object):
     def process_item(self, item, spider):
-        # path=os.getcwd()+"\\"+item['city_name']+"\\"+item['year']+"\\"+item['type_name']
-        # file_name_path=path+"\\"+item['file_name']+"."+item['content_type']
-        # mkdir(path)
-        # print('正在下载',file_name_path)
-        # url=item['url']
-        # content_type=item['content_type']
-        # downld(file_name_path,url,content_type)
+        path=os.getcwd()+"\\"+item['city_name']+"\\"+item['year']+"\\"+item['type_name']
+        file_name_path=path+"\\"+item['file_name']+"."+item['content_type']
+        mkdir(path)
+        print('正在下载',file_name_path)
+        url=item['url']
+        content_type=item['content_type']
+        downld(file_name_path,url,content_type)
         return item
