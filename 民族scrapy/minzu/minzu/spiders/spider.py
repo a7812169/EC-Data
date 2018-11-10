@@ -2,19 +2,20 @@
 #
 # Please refer to the documentation for information on how to create and manage
 # your spiders.
-import pymongo
-import yaml
 import os
-import requests
-from selenium import webdriver
-from scrapy import Spider
-import re
-from bs4 import BeautifulSoup
-from .public import *
-from scrapy import Request
-from ..items import Minzu_ningxia_Item
 import random
+import re
+
+import requests
+import yaml
+from bs4 import BeautifulSoup
 from pymongo import MongoClient
+from scrapy import Request
+from scrapy import Spider
+from .public import mkdir
+from ..items import Minzu_ningxia_Item
+
+
 class spider_ningxia(Spider):
 	cilient=MongoClient('127.0.0.1',27017)
 	user_agent_list = [
@@ -80,10 +81,10 @@ class spider_ningxia(Spider):
 
 		soup = BeautifulSoup(data.text,'lxml')
 		a = soup.find_all(text=re.compile('.*?篇'))
-		# ningxia/year/title/file_name.html
+		print(a)
 		for i in range(len(a)):
-			type_name = a[i].replace("\n","").replace(" ","")
-			print('正在下载',type_name)
+			type_name = a[i].replace('\n','').replace("\r",'')
+			print('正在下载'+type_name)
 			pattern = self.type_pattern.format(i + 1)
 			k = soup.find_all('a', {'href': re.compile(pattern)})
 			for l in range(len(k)):
@@ -95,6 +96,7 @@ class spider_ningxia(Spider):
 				item['url']=downld_url
 				item['content_type']=self.content_type
 				path = os.getcwd() + "/" + item['city_name'] + "/" + item['year'] + "/" + item['type_name']
+				print(path)
 				file_name_path = path + "/" + item['file_name'] + "." + item['content_type']
 				mkdir(path)
 				print('正在下载', file_name_path)
