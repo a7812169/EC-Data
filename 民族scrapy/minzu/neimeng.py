@@ -56,7 +56,7 @@ if __name__ == '__main__':
 		b = soup.ul.find_all('li', {"id": "foldheader"})
 		for i in range(len(b) - 2):
 			title = soup.ul.find_all('li', {"id": "foldheader"})[i + 2].get_text()
-			path = '内蒙古自治区' + '\\' + str(year) + '\\' + title
+			path = '内蒙古自治区' + '/' + str(year) + '/' + title
 			print(path)
 			c = soup.find_all('ul')[i + 3].find_all('li')
 			if mkdir(path):
