@@ -81,25 +81,20 @@ class spider_ningxia(Spider):
 
 		soup = BeautifulSoup(data.text,'lxml')
 		a = soup.find_all(text=re.compile('.*?篇'))
-		print(a)
 		for i in range(len(a)):
 			type_name = a[i].replace('\n','').replace("\r",'')
-			print('正在下载'+type_name)
 			pattern = self.type_pattern.format(i + 1)
 			k = soup.find_all('a', {'href': re.compile(pattern)})
 			for l in range(len(k)):
-				row_file_name = k[l].get_text().replace("\n", "").replace("\t","")
-				file_name=re.sub(r'[a-zA-Z]',"",row_file_name)
+				file_name = re.search(r'.*[\u4E00-\u9FFF]',k[l].get_text()).group()
 				downld_url = self.common_download.replace('..','') + k[l].get('href').replace('..','')
 				item['type_name']=type_name
 				item['file_name']=file_name
 				item['url']=downld_url
 				item['content_type']=self.content_type
 				path = os.getcwd() + "/" + item['city_name'] + "/" + item['year'] + "/" + item['type_name']
-				print(path)
-				file_name_path = path + "/" + item['file_name'] + "." + item['content_type']
+				file_name_path = path.rstrip() + "/" + item['file_name'] + "." + item['content_type']
 				mkdir(path)
-				print('正在下载', file_name_path)
 				db_result=insert_db(self.cilient,city_name,type_name,file_name,downld_url,self.content_type)
 				if db_result==None:
 					continue
@@ -117,12 +112,13 @@ def downld(path,url,content_type):
     }
 	if content_type== 'jpg':
 		with open(path, "wb")as f:
+			print('正在下载' + path)
 			# print(url,headers)
 			# print(requests.get(url, headers))
 			f.write(requests.get(url, headers).content)
 	else:
 		with open(path, "w", encoding='utf-8')as f:
-			# print(item['url'])
+			print('正在下载'+path)
 			f.write(requests.get(url,headers).text)
 def insert_db(cilient,tabel_name,type_name,file_name,downld_url,content_type):
 	db=cilient.test
