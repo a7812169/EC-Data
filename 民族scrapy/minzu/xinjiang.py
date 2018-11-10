@@ -41,7 +41,7 @@ def make_soup(url):
 
 
 def save_html(name, file_name, res, type):
-	a = os.getcwd() + '\\' + name + '\\' + file_name + '.' + type
+	a = os.getcwd() + '/' + name + '/' + file_name + '.' + type
 	print(a)
 	with open(a, 'wb')as f:
 		f.write(res)
