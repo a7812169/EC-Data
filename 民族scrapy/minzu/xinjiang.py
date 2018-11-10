@@ -55,7 +55,7 @@ if __name__ == '__main__':
 	for i in b:
 		next_url = i.a.attrs['totarget']
 		name = i.a.get_text()
-		name = '新疆' + '\\' + name
+		name = '新疆自治区' + '\\' + name
 		soup = make_soup(next_url)
 		mkdir(name)
 		c = soup.find('ul', {"class": "rightlist tjnj_bg"}).find_all('li')
