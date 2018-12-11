@@ -103,19 +103,11 @@ class spider_ningxia(Spider):
 				downld(file_name_path, url, content_type)
 				yield item
 def downld(path,url,content_type):
-	headers = {
-        'Accept-Encoding': 'gzip, deflate, sdch, br',
-        'Accept-Language': 'zh-CN,zh;q=0.8',
-        'Connection': 'keep-alive',
-        'Referer': 'https://gupiao.baidu.com/',
-        'User-Agent': "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1"
-    }
+	headers = {"User-Agent":"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36"}
 	if content_type== 'jpg':
 		with open(path, "wb")as f:
 			print('正在下载' + path)
-			# print(url,headers)
-			# print(requests.get(url, headers))
-			f.write(requests.get(url, headers).content)
+			f.write(requests.get(url, headers=headers).content)
 	else:
 		with open(path, "w", encoding='utf-8')as f:
 			print('正在下载'+path)
