@@ -111,7 +111,7 @@ def downld(path,url,content_type):
 	else:
 		with open(path, "w", encoding='utf-8')as f:
 			print('正在下载'+path)
-			f.write(requests.get(url,headers).text)
+			f.write(requests.get(url,headers=headers).text)
 def insert_db(cilient,tabel_name,type_name,file_name,downld_url,content_type):
 	db=cilient.test
 	collection=db[tabel_name]
