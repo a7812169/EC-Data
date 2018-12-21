@@ -1,7 +1,6 @@
 """"公用函数"""
-from bs4 import BeautifulSoup
-import requests
-from selenium import webdriver
+
+
 def mkdir(path):
 	"""建文件夹"""
 	# 引入模块
