@@ -78,12 +78,8 @@ class spider_ningxia(Spider):
 		print('正在执行',year,city_name)
 		data=requests.get(response.url)
 		data.encoding=data.apparent_encoding
-
-		soup = BeautifulSoup(data.text,'lxml')
-		print(soup)
+		soup = BeautifulSoup(data.text,'html.parser')
 		a = soup.find_all(text=re.compile('篇'))
-		print(a)
-		return
 		for i in range(len(a)):
 			type_name = a[i].replace('\n','').replace("\r",'')
 			pattern = self.type_pattern.format(i + 1)
